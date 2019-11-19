@@ -1,5 +1,5 @@
 {
-  "name": "monbuilding",
+  "name": "meteor-metrics2openmetrics",
   "dependencies": {
     "express": "4.17.1",
     "request-promise-native": "1.0.8",
