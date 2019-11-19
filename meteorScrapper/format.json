@@ -1,0 +1,128 @@
+{
+  "gc": {
+    "currentMinute": {
+      "label": "The timestamp of the beginning of the minute during which the measures are taken",
+      "type": "number"
+    },
+    "msecPerGcAvg": {
+      "label": "Average milliseconds per GC operation of any type during the last minute",
+      "type": "number"
+    },
+    "msecPerGcMax": {
+      "label": "Maximum milliseconds per GC operation of any type during the last minute",
+      "type": "number"
+    },
+    "msecTotal": {
+      "label": "Total milliseconds for all types of GC operations during the last minute",
+      "type": "number"
+    },
+    "callsIncrementalMarking": {
+      "label": "Number of calls to the Incremental marker during the last minute",
+      "type": "number"
+    },
+    "callsMarkSweepCompactor": {
+      "label": "Number of calls to the Mark/Sweep/Compact (major) GC during the last minute",
+      "type": "number"
+    },
+    "callsScavenger": {
+      "label": "Number of calls to the Scavenge (minor) GC during the last minute",
+      "type": "number"
+    },
+    "callsWeakPhantomCallbacks": {
+      "label": "Number of calls to Weak/Phantom callbacks during the last minute",
+      "type": "number"
+    },
+    "msecIncrementalMarking": {
+      "label": "Milliseconds spent doing Incremental marking during the last minute",
+      "type": "number"
+    },
+    "msecMarkSweepCompactor": {
+      "label": "Milliseconds spent by the Mark/Sweep/Compactor during the last minute",
+      "type": "number"
+    },
+    "msecScavenger": {
+      "label": "Milliseconds spent by the Scavenger during the last minute",
+      "type": "number"
+    },
+    "msecWeakPhantomCallbacks": {
+      "label": "Milliseconds spent in weak/phantom callbacks during the last minute",
+      "type": "number"
+    }
+  },
+  "mongo": {
+    "nObserveHandles": {
+      "type": "number",
+      "label": "Overall observers count"
+    },
+    "oplogObserveHandles": {
+      "type": "array",
+      "label": "Oplog-based observers[]"
+    },
+    "oplogObserveHandlesCount": {
+      "type": "number",
+      "label": "Oplog-based observers"
+    },
+    "pollingObserveHandles": {
+      "type": "array",
+      "label": "Polling-based observers[]"
+    },
+    "pollingObserveHandlesCount": {
+      "type": "number",
+      "label": "Polling-based observers"
+    }
+  },
+  "process": {
+    "cpuSystem": {
+      "label": "CPU system seconds since last polling. May be > 1 on multiple cores.",
+      "type": "number"
+    },
+    "cpuUser": {
+      "label": "CPU user seconds since last polling. May be > 1 on multiple cores.",
+      "type": "number"
+    },
+    "ramExternal": {
+      "label": "C++ memory bound to V8 JS objects",
+      "type": "number"
+    },
+    "ramHeapTotal": {
+      "label": "V8 Total heap",
+      "type": "number"
+    },
+    "ramHeapUsed": {
+      "label": "V8 Used heap",
+      "type": "number"
+    },
+    "ramRss": {
+      "label": "Resident Set Size (heap, code segment, stack)",
+      "type": "number"
+    }
+  },
+  "sessions": {
+    "nDocuments": {
+      "label": "Total number of documents across subscriptions. Each appearance in a subscription counts.",
+      "type": "Map"
+    },
+    "nSessions": {
+      "label": "Number of sessions",
+      "type": "number"
+    },
+    "nSubs": {
+      "label": "Total number of Subscriptions  across sessions",
+      "type": "Map"
+    },
+    "usersWithNSubscriptions": {
+      "label": "User counts per subscription count",
+      "type": "Map"
+    }
+  },
+  "sockets": {
+    "nSockets": {
+      "type": "number",
+      "label": "Open sockets"
+    },
+    "nSocketsWithLivedataSessions": {
+      "type": "number",
+      "label": "Sockets with session"
+    }
+  }
+}
