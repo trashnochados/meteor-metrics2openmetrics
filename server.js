@@ -59,7 +59,7 @@ function createMetric(title, format, value) {
     case "array":
       if (Object.keys(value).length > 0) {
         return Object.keys(value).reduce((str, itemKey) => {
-          return `# HELP ${title}_${itemKey} gauge\n# TYPE ${title}_${itemKey} gauge\n${title}_${itemKey} ${value}\n${str}`;
+          return `# HELP ${title}_${itemKey} gauge\n# TYPE ${title}_${itemKey} gauge\n${title}_${itemKey} ${value[itemKey]}\n${str}`;
         }, "")
       }
       return "";
