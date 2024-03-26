@@ -1,7 +1,7 @@
 {
   "name": "meteor-metrics2openmetrics",
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.19.2",
     "request-promise-native": "1.0.8",
     "request": "2.88.0"
   },
